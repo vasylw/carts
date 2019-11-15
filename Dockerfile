@@ -1,7 +1,7 @@
 FROM java:openjdk-8-alpine
 
 WORKDIR /usr/src/app
-COPY ./carts.jar /usr/src/app/app.jar
+COPY carts.jar /usr/src/app/app.jar
 ARG DB_NETWORK_IP=""
 ENV DB_NETWORK_IP=$DB_NETWORK_IP
 
