@@ -1,7 +1,7 @@
 FROM java:openjdk-8-alpine
 
 WORKDIR /usr/src/app
-COPY /var/lib/jenkins/workspace/carts/target/*.jar /usr/src/app/app.jar
+COPY *.jar /usr/src/app/app.jar
 ARG DB_NETWORK_IP=""
 ENV DB_NETWORK_IP=$DB_NETWORK_IP
 
